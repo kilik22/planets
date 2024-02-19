@@ -1,0 +1,79 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.left-panel,
+.right-panel {
+  width: 45%;
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-panel {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.planet {
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.planet:hover {
+  background-color: #c0c0c0;
+}
+
+.planet img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.right-panel img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.right-panel p {
+  margin: 10px 0;
+  color: #555;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-panel,
+  .right-panel {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
